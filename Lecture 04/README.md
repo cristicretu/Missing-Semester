@@ -12,4 +12,10 @@ cat words.txt | grep -E '^([^a]*a){3}.*$' | grep -v -E "^\w+s$" | sed -E "s/.*([
 ```
 
 
-How many of those two-letter combinations are there? And for a challenge: which combinations do not occur?
+How many of those two-letter combinations are there?
+
+```sh 
+cat words.txt | grep -E '^([^a]*a){3}.*$' | grep -v -E "^\w+s$" | sed -E "s/.*([a-z]{2})$/\1/" | sort | uniq -c | wc -l
+```
+
+And for a challenge: which combinations do not occur?
