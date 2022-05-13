@@ -1,7 +1,7 @@
 Find the number of words (in /usr/share/dict/words) that contain at least three as and don’t have a 's ending.
 
 ```sh 
-cat words.txt | grep -E '^([^a]*a){3}.*$' | grep -v -E "^\w+s$"
+cat words.txt | grep -E -i '^([^a]*a){3}.*$' | grep -v -E "^\w+s$"
 ```
 
 
