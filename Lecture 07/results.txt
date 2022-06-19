@@ -1,0 +1,15 @@
+quicksort
+  func calls = 245 607
+  mem usage = 18.359 Mib 
+  time = 0.058 total
+
+insertion_sort
+  func calls = 141 691
+  mem usage = 18.719 Mib
+  time = 0.060 total
+
+
+quicksort_inplace
+  func calls = 211 014
+  mem usage = 18.766 Mib 
+  time = 0.024 total
